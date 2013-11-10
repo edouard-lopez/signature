@@ -13,3 +13,14 @@ The [HTML template](./templates/signature.html) contains information as a [h-car
 Result **as an image** below (code available in : [HTML template](./templates/signature.html)
 
 ![HTML signatures](./screenshots/html-rich.png)
+
+## How to use it ?
+
+1. Fork mine ;
+2. Fill your info refering to the [H-card microformat specs](http://microformats.org/wiki/h-card) ;
+3. Open the `signature.html` using **Chrome/Chromium** ;
+    * `Firefox 28.0a1`/`Opera 12.16 build 1860` do **not** copy the `<style>` and `<link>` elements. Henceforth missing typography and layout ;
+4. Copy from the HTML to your [Gmail settings](https://support.google.com/mail/answer/8395?hl=en&ctx=mail).
+
+Enjoy :)
+
