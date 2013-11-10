@@ -1,0 +1,188 @@
+<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+<style>
+/*
+  A Book Apart color
+  color:#00b4db;
+  color:#8bc43d;
+  color:#815c84;
+  color:#007b69;
+  color:#ae6e29;
+  color: #ffc40a;
+  color:#f05c28;
+ */
+.h-card {
+  font-family: Ubuntu,sans-serif;
+  font-size: 10pt;
+  color: #aaa;
+}
+.h-card a {
+  text-decoration: none;
+  color: #aaa;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.h-card a:hover {
+  color:#00b4db;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.h-card a.arrow::after {
+  content: '\200A→';
+  opacity: 0.01;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.h-card a.arrow:hover::after {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.h-card address {
+  font-style: normal;
+  display: inline-block;
+}
+.h-card {
+  width: 100%;
+}
+.h-card td.photo {
+}
+.h-card td.info {
+  width: 100%;
+}
+.h-card td {
+  vertical-align: top;
+}
+.h-card .u-photo {
+  border: none;
+}
+.h-card dl {
+  margin-left: .75em;
+}
+.h-card dt,
+.h-card dd
+{
+  line-height: 1.25em;
+}
+.h-card dt {
+  clear: left;
+  float: left;
+  color:#f05c28;
+}
+.h-card dd {
+  margin-left: 4.5em;
+}
+
+.h-card .hide {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+.h-card .who-am-i {
+  margin-left: 0;
+}
+.h-card .who-am-i .p-name {
+  font-weight: bold;
+}
+.h-card .favicon {
+  display: inline-block;
+  margin-left: 0;
+  margin-right: .5em;
+  margin-top: .5em;
+  float: left
+}
+.h-card .favicon a {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+.h-card .favicon a {
+  -webkit-transition: -moz-transform 0.3s;
+  -moz-transition: -webkit-transform 0.3s;
+  -o-transition: -o-transform 0.3s;
+  transition: transform 0.3s;
+}
+.h-card .favicon a:hover
+ {
+  -moz-transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
+  -o-transform:rotate(45deg);
+  transform:rotate(45deg);
+}
+
+.h-card .twitter { background-color: #6FA8DC;}
+.h-card .github { background-color: #999999;}
+.h-card .linkedin { background-color: #3D85C6;}
+.h-card .stackoverflow { background-color: #E69138;}
+.h-card .google { background-color: #CC0000;}
+</style>
+
+
+<table class="h-card" cellpadding="0px" cellspacing="0px">
+  <tbody>
+    <tr>
+      <td class="photo" data="photo">
+        <img class="u-photo" alt="Adventurous me!" title="Trip to the Netherland" src="http://edouard-lopez.com/cv/id_photo/2013-06.Edouard-Lopez-netherland-96x96-bw-80pc.png" />
+      </td>
+      <td class="info" data="info">
+        <dl>
+          <dt class="hide">
+            Who am I?
+          </dt>
+            <dd data="name" class="who-am-i header">
+              <span class="p-name">
+                <span class="p-given-name">Édouard</span> <span class="p-family-name">Lopez</span></b>
+              </span>
+                –
+              <span class="p-job-title"><abbr title="user experience">UX</abbr> developer</span>
+            </dd>
+          <dt>Address:</dt>
+            <dd data="address">
+              <a class="p-adr h-adr arrow" href="http://goo.gl/maps/gxuHz">
+                <address>
+                  <span class="p-locality">Bordeaux</span>
+                  <span class="p-country-name">France</span>
+                </address>
+              </a>
+            </dd>
+          <dt data="phone">Mobile:</dt>
+            <dd>
+              <a class="p-tel arrow" href="tel:+33.760.069.730" value="+33760069730" target="_blank">+33 760 069 730</a>
+            </dd>
+          <dt data="website">Website:</dt>
+            <dd>
+              <a class="p-name u-url arrow" href="http://edouard-lopez.com" target="_blank">edouard-lopez.com</a>
+            </dd>
+          <dt class="hide" data="social">Social:</dt>
+          <dd class="favicon">
+            <a class="twitter" href="https://twitter.com/edouard_lopez" target="_blank">
+              <img alt="twitter" src="http://blog.edouard-lopez.com/images/social/twitter.png"></a></dd>
+          <dd class="favicon">
+            <a class="github" href="https://github.com/edouard-lopez" target="_blank">
+              <img alt="github" src="http://blog.edouard-lopez.com/images/social/github.png"></a></dd>
+          <dd class="favicon">
+            <a class="linkedin" href="http://fr.linkedin.com/in/edouardlopez/en" target="_blank">
+              <img alt="linkedin" src="http://blog.edouard-lopez.com/images/social/linkedin.png"></a></dd>
+          <dd class="favicon">
+            <a class="stackoverflow" href="http://stackoverflow.com/users/802365/edouard-lopez" target="_blank">
+              <img alt="stackoverflow" src="http://blog.edouard-lopez.com/images/social/stackoverflow.png"></a></dd>
+          <dd class="favicon">
+            <a class="google" href="https://plus.google.com/+ÉdouardLopez" target="_blank">
+              <img alt="google" src="http://blog.edouard-lopez.com/images/social/google.png"></a></dd>
+        </dl>
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
