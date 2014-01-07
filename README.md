@@ -24,3 +24,6 @@ Result **as an image** below (code available in : [HTML template](./templates/si
 
 Enjoy :)
 
+### Why not Base64 images ?
+
+I went this way. But using [base64](https://en.wikipedia.org/wiki/base64) images as CSS background is no good as _Gmail_ complains about the length of the signature and refuse to save it. So I went back to external images.
