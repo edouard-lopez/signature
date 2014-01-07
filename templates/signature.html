@@ -106,8 +106,10 @@
 }
 .h-card .favicon a {
   width: 16px;
-  height: 16px;
+  height: 15px;
+  line-height: 16px;
   display: block;
+  text-align: center;
 }
 
 .h-card .favicon a {
@@ -123,30 +125,18 @@
   -o-transform:rotate(22.5deg);
   transform:rotate(22.5deg);
 }
-.h-card .favicon a>img {
+.h-card .favicon a>abbr {
   color: white;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: small;
 }
 
-.h-card .twitter {
-  background-color: #6FA8DC;
-  background-image: url(data:image/png;base64\,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1NEQxNDBEQjNCMzkxMUUxQkIzREQzNkE0OUU0NkI0OSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1NEQxNDBEQzNCMzkxMUUxQkIzREQzNkE0OUU0NkI0OSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjU0RDE0MEQ5M0IzOTExRTFCQjNERDM2QTQ5RTQ2QjQ5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU0RDE0MERBM0IzOTExRTFCQjNERDM2QTQ5RTQ2QjQ5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Q9/oOwAAAKNJREFUeNpi/P//PwMlgImBQkAXA/SB+D0Q/4fifiDmh8uCwgAP5gfi+/8R4D2Ung9Tg02DPRDLQ/n5/1FBPlQzjM2PbgBIoz9UUTya7cgugIH7yJr7kRSBDNj/Hzd4D7UAxQv4NKCDelxhEI/FmdiAPbIB86H+Rg6H9wScz4BsQDySxH5SnI/sBX8inb4fPa2gp4F8HK54j24zDDMOeG4ECDAAUvJCzatfOKMAAAAASUVORK5CYII=);
-}
-.h-card .github {
-  background-color: #999999;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpDRUMyMjZBRDY3ODQxMUUxQTZDREJDNTI0RTkxMkVERSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpDRUMyMjZBRTY3ODQxMUUxQTZDREJDNTI0RTkxMkVERSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkNFQzIyNkFCNjc4NDExRTFBNkNEQkM1MjRFOTEyRURFIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkNFQzIyNkFDNjc4NDExRTFBNkNEQkM1MjRFOTEyRURFIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+gqxf4wAAASdJREFUeNqU0z0vBFEUxvE7sxOxFLIKFCSLSiFBtZ1Syweg8S225lt4aUUUGo1OsREFoiSKbTQiYgWRsMb/bp6R42aSmX2SX7Mz58zZe2aiNE2dyRwGce3yM45pXKBXGJkGMQ6wjEO0MKnfO6hhUw9YxFOvyjcQ3+wyLc4XZrK6OBhvxBUnwYodO8sqZl25bGAobDDlymcCY2GDrusvP9n/WdCpNvoo9uOv4zzWqtrY0urKZF/3JnaNDcxjF/f4DNb3iis0Tc3fe5BgG8cY0J7Pggb+es0W2wZeBTe4xSne8KHiLnbC4vBF8ltYwwmq2tCDTvsRw7mnkdcVdbTxrAn8JEdFE9gs4UVPv9MkHW3sX6Lgc/apYBR1fZktvSN7eMe3vflXgAEAKuQ6IVrJuPkAAAAASUVORK5CYII=);
-}
-.h-card .linkedin {
-  background-color: #3D85C6;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2tpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcFJpZ2h0czpNYXJrZWQ9IkZhbHNlIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkM4Qzc1QUI4QTc2MTExRTE4NDY5OTk1MTA4NjhFMTYzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkM4Qzc1QUI3QTc2MTExRTE4NDY5OTk1MTA4NjhFMTYzIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzMgTWFjaW50b3NoIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InV1aWQ6MDZBNkE0NEE5MUE2REQxMTg3RTU4QjQ5RTQ3NzM0RUMiIHN0UmVmOmRvY3VtZW50SUQ9InV1aWQ6MDVBNkE0NEE5MUE2REQxMTg3RTU4QjQ5RTQ3NzM0RUMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6494oLAAABhklEQVR42qRTvUoDQRDe2d1cgoaAoIWVFil8ALEUnyeNpSI+gYVo6zP4BD6DaWwkMWhhCkGMRPEud/szfnu5wCnES3C5YXZvZ+f75ptdYmaBT3hmKYk8kVhqSBwUmXXH8P3E2AvnWS6V4WuStVNjx2DCxjmOU7M3ZbWYyZpWQ6Df5kyMu1eSHpchQCGLdT4yzm9BhGFdqyRs8Cyg8GHtvBdKSlGWSaP+aBynHaXkGjZSJDiPM7MZT0wHokrL3G02oq4kcZRZv60V9ZHkEnH3eYYkM03UPeDp+IS1YPs8+5GkD4h55tKAZq8A2ck1COxKreNfXgC9DfcOllco9SX8i7Ra954PQwJdJRK0eUIpB62V+gjIN6B/HQBrSu56wFT2HBr1cGhUkLyz3puCxSo6pisThHbP5kB0oO3LZVbfOvpjNScBp9ZJ5gXfwvQy/UCgjyTVrmAKyjSHU+61VjKFP4NthKcBm6B1A0V0GoIaNd2TRZ8jJd+I6ATTBiy01OdX+T/jW4ABACTYC+nLxFKbAAAAAElFTkSuQmCC);
-}
-.h-card .stackoverflow {
-  background-color: #E69138;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAy0lEQVR42r3NoQrCUBSA4SEiQ0RMBhGDiGHJbB5GMQzTWJQFEYNBDILBMIwLIj6EaWHIMPgMJlkw7QHGMM4/LAl670A88MEp5z/KXydN0wEaeY9aULP9AjNvwIeT7S6cvIEuYvQxgSdzVMEVIyiY4g4dD5lAARYi+NAQ4IgTiqLAGG1UsUOCLZoy30vw8USIA1boiQ5VeKihgzp0OAgww/BboIwbDMRImQQhXGxgyQQ0mLCxxh7zPAED5zdL2UAE+wNPFChiIaApv54XsLRtG2kSj3sAAAAASUVORK5CYII=);
-}
-.h-card .google {
-  background-color: #CC0000;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozQ0QyOTE0QzNCM0ExMUUxQkIzREQzNkE0OUU0NkI0OSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozQ0QyOTE0RDNCM0ExMUUxQkIzREQzNkE0OUU0NkI0OSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjNDRDI5MTRBM0IzQTExRTFCQjNERDM2QTQ5RTQ2QjQ5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjNDRDI5MTRCM0IzQTExRTFCQjNERDM2QTQ5RTQ2QjQ5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+ohc4iQAAATlJREFUeNp808ErhEEYx3Ev22btgZLYhLODNoqLk3JzIxsHN7Xlj9iUOLi4IXc54ixK2gOScHJw3Fy2EAfa2td38nvrNTszU5/ed2efed6Z533eKI7jNs+YxAz68QUTmMUJbpKgds/iEvZQwDgqWMU7Xv9Fmh1Y5uK/sazfXajiB7N2vL04whmayKfmF5X01E5gHyGDYTQxkJp/0DVrn9VO0MAlOlBOzY/pethSLUcNhnCtY2ygjGesO2KdCZLCzeNAZ7/3xHkTJIpK8IElV0zG0wcLmEYvnlSDI/XFTqgGfXqNj1jBIHK6N7toYCJ0hF1tedSx3ZL+Wwv1QVE9/+Y41oVe80uoD64QYR8jujejG9s4xnl6QWR9jTlsqok+VcA6enCLLXyHEpjRqc94Sk+u4U4d2hL8K8AAC+GS2S524ygAAAAASUVORK5CYII=);
-}
+.h-card .twitter { background-color: #6FA8DC; }
+.h-card .github { background-color: #999999; }
+.h-card .linkedin { background-color: #3D85C6; }
+.h-card .stackoverflow { background-color: #E69138; }
+.h-card .google { background-color: #CC0000; }
 </style>
 
 
@@ -186,24 +176,24 @@
             </dd>
           <dt class="hide" data="social">Social:</dt>
           <dd class="favicon">
-            <a class="twitter" href="https://twitter.com/edouard_lopez" target="_blank">
-              <abbr class="hide" title="Twitter">Tw</abbr>
+            <a class="twitter" title="Twitter" href="https://twitter.com/edouard_lopez" target="_blank">
+              <abbr title="Twitter">Tw</abbr>
             </a></dd>
           <dd class="favicon">
-            <a class="github" href="https://github.com/edouard-lopez" target="_blank">
-              <abbr class="hide" title="Github">Gh</abbr>
+            <a class="github" title="Github" href="https://github.com/edouard-lopez" target="_blank">
+              <abbr title="Github">Gh</abbr>
             </a></dd>
           <dd class="favicon">
-            <a class="linkedin" href="http://fr.linkedin.com/in/edouardlopez/en" target="_blank">
-              <abbr class="hide" title="Linkedin">in</abbr>
+            <a class="linkedin" title="Linkedin" href="http://fr.linkedin.com/in/edouardlopez/en" target="_blank">
+              <abbr title="Linkedin">in</abbr>
             </a></dd>
           <dd class="favicon">
-            <a class="stackoverflow" href="http://stackoverflow.com/users/802365/edouard-lopez" target="_blank">
-              <abbr class="hide" title="Stackoverflow">SO</abbr>
+            <a class="stackoverflow" title="Stackoverflow" href="http://stackoverflow.com/users/802365/edouard-lopez" target="_blank">
+              <abbr title="Stackoverflow">So</abbr>
             </a></dd>
           <dd class="favicon">
-            <a class="google" href="https://plus.google.com/+ÉdouardLopez" target="_blank">
-              <abbr class="hide" title="Google">G+</abbr>
+            <a class="google" title="Google" href="https://plus.google.com/+ÉdouardLopez" target="_blank">
+              <abbr title="Google">G+</abbr>
             </a></dd>
         </dl>
         </p>
