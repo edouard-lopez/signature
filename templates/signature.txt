@@ -5,7 +5,5 @@ Website: http://edouard-lopez.com
 
 Twitter: https://twitter.com/edouard_lopez
 Github: https://github.com/edouard-lopez
-LinkedIn: http://fr.linkedin.com/in/edouardlopez/en
-Stackoverflow: http://stackoverflow.com/users/802365/edouard-lopez
-Google+: https://plus.google.com/+ÉdouardLopez
+Stackoverflow: https://careers.stackoverflow.com/edouard-lopez
 
