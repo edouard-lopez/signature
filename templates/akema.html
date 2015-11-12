@@ -10,23 +10,46 @@ color:#ae6e29;
 color: #ffc40a;
 color:#f05c28;
 */
-    
+
     .h-card {
-        font-family: Ubuntu, sans-serif;
-        font-size: 10pt;
-        color: #999;
+        width: 340px;
+        font: 13px/1.4 Ubuntu, Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif;
+        padding: 5px;
     }
-    
+
+    .h-card .data {
+        vertical-align: top;
+        padding-left: 5px;
+    }
+
+    .h-card .info {
+        width: 100%;
+        font-size: 100%;
+        color: HSL(0, 0%, 60%);
+    }
+
+    .h-card .photo, .h-card .label {
+        vertical-align: top;
+    }
+    .h-card .label {
+        color: #f05c28;
+        width: 3em;
+    }
+
+    .h-card .datum {
+        width: 8em;
+    }
+
     .h-card a,
     .h-card .p-name {
+        color: HSL(0, 0%, 60%);
         text-decoration: none;
-        color: #999;
         -webkit-transition: color 0.3s;
         -moz-transition: color 0.3s;
         -o-transition: color 0.3s;
         transition: color 0.3s;
     }
-    
+
     .h-card a:hover {
         color: #00b4db;
         -webkit-transition: color 0.3s;
@@ -34,7 +57,7 @@ color:#f05c28;
         -o-transition: color 0.3s;
         transition: color 0.3s;
     }
-    
+
     .h-card a.arrow::after {
         content: '\200A\2192';
         opacity: 0.01;
@@ -43,7 +66,7 @@ color:#f05c28;
         -o-transition: opacity 0.3s;
         transition: opacity 0.3s;
     }
-    
+
     .h-card a.arrow:hover::after {
         opacity: 1;
         -webkit-transition: opacity 0.3s;
@@ -51,52 +74,27 @@ color:#f05c28;
         -o-transition: opacity 0.3s;
         transition: opacity 0.3s;
     }
-    
+
     .h-card address {
         font-style: normal;
         display: inline-block;
     }
-    
-    .h-card {
-        width: auto;
-    }
-    
-    .h-card td.photo {
+
+    .h-card .photo {
         width: 80px;
     }
-    
-    .h-card td.info {
-        width: 200px;
+
+    .h-card .photo {
     }
-    
-    .h-card td {
-        vertical-align: top;
-    }
-    
+
     .h-card .u-photo {
         border: none;
     }
-    
-    .h-card dl {
-        margin-left: .75em;
-        margin-top: 0;
-    }
-    
-    .h-card dt,
-    .h-card dd {
+
+    .h-card .row {
         line-height: 1.25em;
     }
-    
-    .h-card dt {
-        clear: left;
-        float: left;
-        color: #f05c28;
-    }
-    
-    .h-card dd {
-        margin-left: 4.5em;
-    }
-    
+
     .h-card .hide {
         position: absolute;
         left: -10000px;
@@ -105,81 +103,83 @@ color:#f05c28;
         height: 1px;
         overflow: hidden;
     }
-    
+
     .h-card .who-am-i {
-        margin-left: 0;
-    }
-    
-    .h-card .who-am-i .p-name {
         font-weight: bold;
+        padding-bottom: 5px;
+        position: relative;
+        top: -2px;
     }
-    
+
+    .h-card .who-am-i::first-letter {
+        letter-spacing: 1px;
+    }
+
+    .h-card .social {
+        position: relative;
+        left: -5.5em;
+    }
+
     .h-card .favicon {
-        display: inline-block;
-        margin-left: 0;
-        margin-right: .5em;
-        margin-top: .5em;
-        float: left;
-	    opacity: 0.75;
-    }
-    .h-card .favicon:hover {
-	    opacity: 1;
-    }
-    .h-card .favicon a {
         width: 16px;
         height: 16px;
         display: block;
-    }
-    
-    .h-card .favicon a {
+        margin: 0;
+        margin-right: 5px;
+        float: left;
+
+        opacity: 0.75;
         -webkit-transition: -moz-transform 0.3s;
         -moz-transition: -webkit-transform 0.3s;
         -o-transition: -o-transform 0.3s;
         transition: transform 0.3s;
     }
-    
-    .h-card .favicon a:hover {
+
+    .h-card .favicon:hover {
+        opacity: 1;
+    }
+
+    .h-card .favicon:hover {
         -moz-transform: rotate(22.5deg);
         -webkit-transform: rotate(22.5deg);
         -o-transform: rotate(22.5deg);
         transform: rotate(22.5deg);
     }
-    
-    .h-card .favicon a>img {
+
+    .h-card .favicon > img {
         color: white;
+        width: 16px;
+        height: 16px;
     }
-    
-    .h-card .twitter {
-        /*background-color: #6FA8DC;*/
-    }
-    
-    .h-card .github {
-        /*background-color: #999999;*/
-    }
-    
-    .h-card .stackoverflow {
-        /*background-color: #E69138;*/
+
+    table.info {
+        border-collapse: collapse;
+        border-spacing: 0;
     }
 </style>
 <table class="h-card" cellpadding="0px" cellspacing="0px">
     <tbody>
-        <tr>
-            <td class="photo" data="photo">
-                <img class="u-photo" alt="Adventurous me!" title="Trip to the Netherland" src="https://en.gravatar.com/userimage/20060482/53f20c3e61b3f95397d3a2a5497a5cba?size=96" />
-            </td>
-            <td class="info" data="info">
-                <dl>
-                    <dt class="me">
+    <tr>
+        <td class="photo" data="photo">
+            <img class="u-photo" alt="Adventurous me!" title="Trip to the Netherland"
+                 src="https://en.gravatar.com/userimage/20060482/53f20c3e61b3f95397d3a2a5497a5cba?size=96"/>
+        </td>
+        <td class="data">
+            <table class="info" data="info">
+                <tr class="row">
+                    <td class="who-am-i" data="name" colspan="2">
 						<span class="p-name">
 							<span class="p-given-name">&Eacute;douard</span> <span class="p-family-name">Lopez</span>
 						</span>
-					</dt>
-                    <dd data="name" class="who-am-i header">
-                        &nbsp;&ndash;
-                        <span class="p-job-title"><abbr title="user experience">UX</abbr> developer</span>
-                    </dd>
-                    <dt>Address:</dt>
-                    <dd data="address">
+                        <span data="name" class="header">
+                            &nbsp;&ndash;
+                            <span class="p-job-title"><abbr title="user experience">UX</abbr> developer</span>
+                        </span>
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="label">address:</td>
+                    <td data="address" class="datum">
                         <address>
 							<a class="p-adr h-adr arrow" href="http://is.gd/lyREcq">
 								<!-- <span class="p-organization-name">Akema SAS</span><br> -->
@@ -189,34 +189,36 @@ color:#f05c28;
 								<span class="p-country-name">France</span>
 							</a>
 						</address>
-                    </dd>
-                    <dt data="phone">Phone:</dt>
-                    <dd>
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="label">phone:</td>
+                    <td class="datum" data="phone">
                         <a class="p-tel arrow" href="tel:+33.556.787.250" value="+33556787250" target="_blank">+33 556 787 250</a>
-                    </dd>
-                    <dt data="website">Website:</dt>
-                    <dd>
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="label">website:</td>
+                    <td class="datum" data="website">
                         <a class="p-name u-url arrow" href="http://akema.fr" target="_blank">akema.fr</a>
-                    </dd>
-                    <dt class="hide" data="social">Social:</dt>
-                    <dd class="favicon">
-                        <a class="twitter" href="https://twitter.com/edouard_lopez" target="_blank">
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="label hide">social:</td>
+                    <td class="datum social" data="social">
+                        <a class="favicon twitter" href="https://twitter.com/edouard_lopez" target="_blank">
                             <img alt="twitter" src="https://icons.duckduckgo.com/ip2/about.twitter.com.ico">
                         </a>
-                    </dd>
-                    <dd class="favicon">
-                        <a class="github" href="https://github.com/edouard-lopez" target="_blank">
+                        <a class="favicon github" href="https://github.com/edouard-lopez" target="_blank">
                             <img alt="github" src="https://icons.duckduckgo.com/ip2/github.com.ico">
                         </a>
-                    </dd>
-                    <dd class="favicon">
-                        <a class="stackoverflow" href="https://careers.stackoverflow.com/edouard-lopez" target="_blank">
+                        <a class="favicon stackoverflow" href="https://careers.stackoverflow.com/edouard-lopez" target="_blank">
                             <img alt="stackoverflow" src="https://icons.duckduckgo.com/ip2/stackoverflow.com.ico">
                         </a>
-                    </dd>
-                </dl>
-                </p>
-            </td>
-        </tr>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
     </tbody>
 </table>
