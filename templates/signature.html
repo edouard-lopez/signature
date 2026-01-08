@@ -14,7 +14,12 @@ color:#f05c28;
     .h-card {
         width: 340px;
         font: 13px/1.4 Ubuntu, Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif;
-        padding: 5px;
+        padding-left: 10px;
+    }
+
+    .h-card .photo {
+        outline: thin solid red;
+        padding-left: 10px;
     }
 
     .h-card .data {
@@ -28,11 +33,17 @@ color:#f05c28;
         color: HSL(0, 0%, 60%);
     }
 
+    .h-card .info .who-am-i .p-name {
+        font-size: 150%;
+        line-height: 1.25em
+    }
+
     .h-card .photo, .h-card .label {
         vertical-align: top;
     }
     .h-card .label {
         color: #f05c28;
+        color: #86b851;
         width: 3em;
     }
 
@@ -43,6 +54,7 @@ color:#f05c28;
     .h-card a,
     .h-card .p-name {
         color: HSL(0, 0%, 60%);
+        color: #86b851;
         text-decoration: none;
         -webkit-transition: color 0.3s;
         -moz-transition: color 0.3s;
@@ -89,6 +101,9 @@ color:#f05c28;
 
     .h-card .u-photo {
         border: none;
+        border-radius: 60px;
+        width: 120px; 
+        height: 120px
     }
 
     .h-card .row {
@@ -117,7 +132,8 @@ color:#f05c28;
 
     .h-card .social {
         position: relative;
-        left: -5.5em;
+        left: -5em;
+        top: .25em;
     }
 
     .h-card .favicon {
@@ -162,7 +178,7 @@ color:#f05c28;
     <tr>
         <td class="photo" data="photo">
             <img class="u-photo" alt="Adventurous me!" title="Trip to the Netherland"
-                 src="http://en.gravatar.com/userimage/20060482/53f20c3e61b3f95397d3a2a5497a5cba?size=96"/>
+                 src="https://github.com/edouard-lopez/edouard-lopez.com/blob/master/%C3%89douard-lopez.png?raw=true"/>
         </td>
         <td class="data">
             <table class="info" data="info">
@@ -171,9 +187,11 @@ color:#f05c28;
 						<b class="p-name">
 							<span class="p-given-name">&Eacute;douard</span> <span class="p-family-name">Lopez</span>
 						</b>
+                        <br>
                         <b data="name" class="header">
-                            &nbsp;&ndash;
-                            <span class="p-job-title"><abbr title="user experience">UX</abbr> developer</span>
+                            <span class="p-job-title">Staff Quality</span>
+                            <br>
+                            <span class="p-job-title">Software Engineer</span>
                         </b>
                     </td>
                 </tr>
@@ -182,7 +200,7 @@ color:#f05c28;
                     <td data="address" class="datum">
                         <address>
                             <a class="p-adr h-adr arrow" href="http://is.gd/lyREcq">
-                                <span class="p-locality">Bordeaux</span>,
+                                <span class="p-locality">Capbreton</span>,
                                 <span class="p-country-name">France</span>
                             </a>
                         </address>
@@ -197,14 +215,17 @@ color:#f05c28;
                 <tr class="row">
                     <td class="label">website:</td>
                     <td class="datum" data="website">
-                        <a class="p-name u-url arrow" href="http://edouard-lopez.com" target="_blank">edouard-lopez.com</a>
+                        <a class="p-name u-url arrow" href="https://www.edouard-lopez.com/" target="_blank">edouard-lopez.com</a>
                     </td>
                 </tr>
                 <tr class="row">
                     <td class="label hide">social:</td>
                     <td class="datum social" data="social">
-                        <a class="favicon twitter" href="http://twitter.com/edouard_lopez" target="_blank">
-                            <img alt="twitter" src="https://raw.githubusercontent.com/edouard-lopez/signature/master/templates/twitter.png" width="16" height="16">
+                        <a class="favicon mastodon" href="https://piaille.fr/@edouard_lopez" target="_blank">
+                            <img alt="mastodon" src="https://raw.githubusercontent.com/edouard-lopez/signature/master/templates/mastodon.png" width="16" height="16">
+                        </a>
+                        <a class="favicon bluesky" href="https://bsky.app/profile/edouard-lopez.com" target="_blank">
+                            <img alt="bluesky" src="https://raw.githubusercontent.com/edouard-lopez/signature/master/templates/bluesky.png" width="16" height="16">
                         </a>
                         <a class="favicon github" href="http://github.com/edouard-lopez" target="_blank">
                             <img alt="github" src="https://raw.githubusercontent.com/edouard-lopez/signature/master/templates/github.png" width="16" height="16">
