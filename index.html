@@ -1,0 +1,237 @@
+<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+<style>
+    /*
+A Book Apart color
+color:#00b4db;
+color:#8bc43d;
+color:#815c84;
+color:#007b69;
+color:#ae6e29;
+color: #ffc40a;
+color:#f05c28;
+*/
+
+    .h-card {
+        width: 360px;
+        font: 13px/1.4 Ubuntu, Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif;
+    }
+
+    .h-card .photo {
+        padding-left: 10px;
+    }
+
+    .h-card .data {
+        vertical-align: top;
+        padding-left: 5px;
+    }
+
+    .h-card .info {
+        width: 100%;
+        font-size: 100%;
+        color: HSL(0, 0%, 60%);
+    }
+
+    .h-card .info .who-am-i .p-name {
+        color: #86b851;
+        font-size: 150%;
+        line-height: 1.25em
+    }
+
+    .h-card .photo, .h-card .label {
+        vertical-align: top;
+    }
+    .h-card .label {
+        color: #f05c28;
+        color: #86b851;
+        width: 3em;
+    }
+
+    .h-card .datum {
+        width: 11em;
+    }
+
+    .h-card a,
+    .h-card .p-name {
+        color: HSL(0, 0%, 60%);
+        text-decoration: none;
+        -webkit-transition: color 0.3s;
+        -moz-transition: color 0.3s;
+        -o-transition: color 0.3s;
+        transition: color 0.3s;
+    }
+
+    .h-card a:hover {
+        color: #00b4db;
+        -webkit-transition: color 0.3s;
+        -moz-transition: color 0.3s;
+        -o-transition: color 0.3s;
+        transition: color 0.3s;
+    }
+
+    .h-card a.arrow::after {
+        content: '\200A\2192';
+        opacity: 0.01;
+        -webkit-transition: opacity 0.3s;
+        -moz-transition: opacity 0.3s;
+        -o-transition: opacity 0.3s;
+        transition: opacity 0.3s;
+    }
+
+    .h-card a.arrow:hover::after {
+        opacity: 1;
+        -webkit-transition: opacity 0.3s;
+        -moz-transition: opacity 0.3s;
+        -o-transition: opacity 0.3s;
+        transition: opacity 0.3s;
+    }
+
+    .h-card address {
+        font-style: normal;
+        display: inline-block;
+    }
+
+    .h-card .photo {
+        width: 80px;
+    }
+
+    .h-card .photo {
+    }
+
+    .h-card .u-photo {
+        border: none;
+        border-radius: 60px;
+        width: 120px; 
+        height: 120px
+    }
+
+    .h-card .row {
+        line-height: 1.25em;
+    }
+
+    .h-card .hide {
+        position: absolute;
+        left: -10000px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+
+    .h-card .who-am-i {
+        padding-bottom: 5px;
+        position: relative;
+        top: -2px;
+    }
+
+    .h-card .who-am-i::first-letter {
+        letter-spacing: 1px;
+    }
+
+    .h-card .social {
+        position: relative;
+        left: -4.5em;
+        top: .25em;
+    }
+
+    .h-card .favicon {
+        width: 16px;
+        height: 16px;
+        display: block;
+        margin: 0;
+        margin-right: 5px;
+        float: left;
+
+        opacity: 0.75;
+        -webkit-transition: -moz-transform 0.3s;
+        -moz-transition: -webkit-transform 0.3s;
+        -o-transition: -o-transform 0.3s;
+        transition: transform 0.3s;
+    }
+
+    .h-card .favicon:hover {
+        opacity: 1;
+    }
+
+    .h-card .favicon:hover {
+        -moz-transform: rotate(22.5deg);
+        -webkit-transform: rotate(22.5deg);
+        -o-transform: rotate(22.5deg);
+        transform: rotate(22.5deg);
+    }
+
+    .h-card .favicon > img {
+        color: white;
+        width: 16px;
+        height: 16px;
+    }
+
+    table.info {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+</style>
+<table class="h-card" cellpadding="0px" cellspacing="0px">
+    <tbody>
+    <tr>
+        <td class="photo" data="photo">
+            <img class="u-photo" alt="Scouting the unknown!" title="Trip to the Netherland"
+                 src="https://github.com/edouard-lopez/edouard-lopez.com/blob/master/%C3%89douard-lopez.png?raw=true"/>
+        </td>
+        <td class="data">
+            <table class="info" data="info">
+                <tr class="row">
+                    <td class="who-am-i" data="name" colspan="2">
+						<b class="p-name">
+							<span class="p-given-name">&Eacute;douard</span> <span class="p-family-name">Lopez</span>
+						</b>
+                        <br>
+                        <span data="name" class="header">
+                            <span class="p-job-title">Staff Engineer</span>
+                        </span>
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="label">address:</td>
+                    <td data="address" class="datum">
+                        <address>
+                            <a class="p-adr h-adr arrow" href="https://osm.org/go/b~5ks?relation=75976" target="_blank">
+                                <span class="p-locality">Capbreton</span>,
+                                <span class="p-country-name">France</span>
+                            </a>
+                        </address>
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="label">phone:</td>
+                    <td class="datum" data="phone">
+                        <a class="p-tel arrow" href="tel:+33.760.069.730" value="+33760069730" target="_blank">+33 760 069 730</a>
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="label">website:</td>
+                    <td class="datum" data="website">
+                        <a class="p-name u-url arrow" href="https://www.edouard-lopez.com/" target="_blank">edouard-lopez.com</a>
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="label hide">social:</td>
+                    <td class="datum social" data="social">
+                        <a class="favicon github" href="http://github.com/edouard-lopez" target="_blank">
+                            <img alt="github" src="https://raw.githubusercontent.com/edouard-lopez/signature/master/templates/github.png" width="16" height="16">
+                        </a>
+                        <a class="favicon linkedin" href="https://www.linkedin.com/in/édouard-lopez/" target="_blank">
+                            <img alt="linkedin" src="https://raw.githubusercontent.com/edouard-lopez/signature/master/templates/linkedin.png" width="16" height="16">
+                        </a>
+                        <a class="favicon bluesky" href="https://bsky.app/profile/edouard-lopez.com" target="_blank">
+                            <img alt="bluesky" src="https://raw.githubusercontent.com/edouard-lopez/signature/master/templates/bluesky.png" width="16" height="16">
+                        </a>
+                        <a class="favicon stackoverflow" href="https://stackoverflow.com/users/802365/%c3%89douard-lopez" target="_blank">
+                            <img alt="stackoverflow" src="https://raw.githubusercontent.com/edouard-lopez/signature/master/templates/stackoverflow.png" width="16" height="16">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    </tbody>
+</table>
